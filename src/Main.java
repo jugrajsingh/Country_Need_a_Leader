@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String args[]){
         try {
-            File input = new File("C:\\Users\\Jugraj Singh\\Documents\\Projects\\input.in");
+            File input = new File("input.in");
             Scanner in = new Scanner(input);
             int testcase = Integer.parseInt(in.nextLine());
             //int temp = Integer.parseInt(in.nextLine());
@@ -24,7 +24,7 @@ public class Main {
                 for(int j=0;j<number;j++){
                     list.add(in.nextLine());
                 }
-                FileUtils.writeStringToFile(new File("out.out"),"Case #"+(i+1)+": "+new Challenge(list)+"\n",true);
+                FileUtils.writeStringToFile(new File("output.out"),"Case #"+(i+1)+": "+new Challenge(list)+"\n",true);
                 //System.out.println("Case #"+(i+1)+": "+new Challenge(list));
                 //Challenge c = new Challenge(list);
             }
